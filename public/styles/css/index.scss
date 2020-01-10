@@ -1,0 +1,268 @@
+body {
+    margin: 0 auto;
+    padding: 0;
+    font-size: 12px;
+    max-width: 1280px;
+    min-width: 800px;
+    font-family: Tahoma, Helvetica, sans-serif;
+    background-color: #fff;
+}
+
+.project-wrapper {
+
+    margin: 10px 64px;
+}
+
+//header
+.header-container {
+    display: flex;
+    position: relative;
+    padding: 0 10px;
+    font-weight: bold;
+    font-size: 14px;
+    color: #fff;
+    background-color: #ccc
+}
+
+.header-menu-elements {
+    display: flex;
+    padding-top: 75px;
+
+    &>div {
+        padding: 10px 30px;
+        margin: 0 1px;
+        cursor: pointer;
+        background-color: #666;
+
+        &:hover {
+            background-color: #000;
+        }
+    }
+}
+
+.header-elements-dropdown {
+    position: relative;
+
+    &:before {
+        content: "";
+        position: absolute;
+        width: 2px;
+        height: 6px;
+        right: 20px;
+        top: 18px;
+        transform: rotate(135deg);
+        background-color: #fff;
+    }
+
+    &:after {
+        content: "";
+        position: absolute;
+        width: 6px;
+        height: 2px;
+        right: 15px;
+        top: 20px;
+        transform: rotate(135deg);
+        background-color: #fff;
+    }
+
+    &:hover {
+        .header-elements-dropdown--inner {
+            display: block;
+        }
+
+        &:before,
+        &:after {
+            transform: rotate(-135deg);
+        }
+    }
+}
+
+.header-elements-dropdown--inner {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    ;
+    width: 148px;
+    font-size: 12px;
+    background-color: #000;
+
+    &>div {
+        padding: 6px 9px;
+        border-bottom: 1px solid #808080;
+    }
+}
+
+.header-menu-icons {
+    display: flex;
+    margin-left: auto;
+    margin-bottom: 8px;
+    align-items: flex-end;
+
+    &>div {
+        height: 24px;
+    }
+}
+
+.header-menu-icons--uk {
+    left: 0;
+    width: 32px;
+    background: url(../../imgs/sprite-imgs.png) 0 0;
+}
+
+.header-menu-icons--france {
+    left: 33px;
+    width: 32px;
+    background: url(../../imgs/sprite-imgs.png) -30px 0;
+}
+
+.header-menu-icons--germany {
+    left: 66px;
+    width: 31px;
+    background: url(../../imgs/sprite-imgs.png) -60px 0;
+}
+
+//main-content
+.main-content {
+    display: flex;
+    flex-direction: row;
+    margin-top: 10px;
+    color: #fff;
+}
+
+.main-content-left-holder {
+    padding: 10px;
+    background-color: #ccc;
+}
+
+.main-content-left-holder--inner {
+    background-color: #515151;
+}
+
+.main-content-title {
+    padding: 25px 0 15px;
+    margin: 0 28px;
+    font-size: 48px;
+    font-weight: bold;
+    box-shadow: 0 1px 0 #7a7a7a;
+    border-bottom: 1px solid #000;
+}
+
+.main-content-elements {
+    padding: 16px 38px 16px 24px;
+
+
+    &>div {
+        margin-top: 25px;
+
+        &:first-child {
+            margin-top: 0;
+        }
+
+        &:last-child {
+            margin-top: 10px;
+        }
+    }
+}
+
+//table
+.table-info {
+    padding: 15px;
+    background-color: #282828;
+}
+
+.todos-wrapper,
+.users-wrapper {
+    flex: 1;
+    text-align: center;
+}
+
+.user-wrapper-name {
+    padding-left: 5px;
+}
+
+.user-keys-wrapper{
+    display: flex;
+    padding: 10px 0;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.user-key-value{
+    flex: 1;
+}
+
+.user,
+.todo {
+    display: flex;
+}
+
+.user-info,.todo-info {
+    flex: 1;
+    padding: 5px 0;
+}
+
+//accordeon
+.accordeon-wrapp {
+    padding: 10px;
+    flex: 0 0 30%;
+    background-color: #a3a3a3;
+}
+
+.accordeon-wrapp--inner {
+    height: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    background-color: #515151;
+}
+
+.accordeon-elements-holder {
+    cursor: pointer;
+    background-color: #000;
+}
+
+.accordeon-element-header {
+    padding: 12px;
+    border-bottom: 1px solid #515151;
+}
+
+.accordeon-text-holder {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height .4s ease-out, padding .4s ease-out;
+}
+
+.accordeon-text-holder.active {
+    max-height: 300px;
+    padding: 10px 0;
+    transition: max-height .4s ease-out, padding .4s ease-out;
+}
+
+.accordeon-text {
+    margin-top: 10px;
+}
+
+//footer
+.footer-container {
+    display: flex;
+    margin-top: 10px;
+    padding: 16px 19px;
+    color: #515151;
+    background-color: #ccc;
+}
+
+.footer-links-elements {
+    display: flex;
+    margin-left: auto;
+
+    &>div {
+        margin-left: 17px;
+        text-decoration: underline;
+        cursor: pointer;
+
+        &:first-child {
+            margin-left: 0;
+        }
+    }
+}

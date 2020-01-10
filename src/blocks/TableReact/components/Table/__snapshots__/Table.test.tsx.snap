@@ -1,0 +1,175 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Table Table renders data correclty with provided props for Todos 1`] = `
+"<div className=\\"table-wrapper\\">
+  <div className=\\"table-buttons\\">
+    <Search text=\\"Search items by name\\" onChange={[Function: res]} />
+    <SelectDropdown onChange={[Function: res]} name=\\"Name\\" userName=\\"Username\\" email=\\"Email\\" />
+    <Btn onClick={[Function: onClick]} text=\\"Sort by ASC\\" />
+  </div>
+  <div className=\\"table-info\\">
+    <div className=\\"users-wrapper\\">
+      <h2>
+        Users
+      </h2>
+      <div className=\\"user-keys-wrapper\\">
+        <div className=\\"user-key-value\\">
+          name
+        </div>
+        <div className=\\"user-key-value\\">
+          username
+        </div>
+        <div className=\\"user-key-value\\">
+          email
+        </div>
+      </div>
+      <div className=\\"user\\">
+        <div className=\\"user-info\\">
+          Chelsey Dietrich
+        </div>
+        <div className=\\"user-info\\">
+          Kamren
+        </div>
+        <div className=\\"user-info\\">
+          Lucio_Hettinger@annie.ca
+        </div>
+      </div>
+      <div className=\\"user\\">
+        <div className=\\"user-info\\">
+          Clementina DuBuque
+        </div>
+        <div className=\\"user-info\\">
+          Moriah.Stanton
+        </div>
+        <div className=\\"user-info\\">
+          Rey.Padberg@karina.biz
+        </div>
+      </div>
+      <div className=\\"user\\">
+        <div className=\\"user-info\\">
+          Clementine Bauch
+        </div>
+        <div className=\\"user-info\\">
+          Samantha
+        </div>
+        <div className=\\"user-info\\">
+          Nathan@yesenia.net
+        </div>
+      </div>
+      <div className=\\"user\\">
+        <div className=\\"user-info\\">
+          Ervin Howell
+        </div>
+        <div className=\\"user-info\\">
+          Antonette
+        </div>
+        <div className=\\"user-info\\">
+          Shanna@melissa.tv
+        </div>
+      </div>
+      <div className=\\"user\\">
+        <div className=\\"user-info\\">
+          Glenna Reichert
+        </div>
+        <div className=\\"user-info\\">
+          Delphine
+        </div>
+        <div className=\\"user-info\\">
+          Chaim_McDermott@dana.io
+        </div>
+      </div>
+      <div className=\\"user\\">
+        <div className=\\"user-info\\">
+          Kurtis Weissnat
+        </div>
+        <div className=\\"user-info\\">
+          Elwyn.Skiles
+        </div>
+        <div className=\\"user-info\\">
+          Telly.Hoeger@billy.biz
+        </div>
+      </div>
+      <div className=\\"user\\">
+        <div className=\\"user-info\\">
+          Leanne Graham
+        </div>
+        <div className=\\"user-info\\">
+          Bret
+        </div>
+        <div className=\\"user-info\\">
+          Sincere@april.biz
+        </div>
+      </div>
+      <div className=\\"user\\">
+        <div className=\\"user-info\\">
+          Mrs. Dennis Schulist
+        </div>
+        <div className=\\"user-info\\">
+          Leopoldo_Corkery
+        </div>
+        <div className=\\"user-info\\">
+          Karley_Dach@jasper.info
+        </div>
+      </div>
+      <div className=\\"user\\">
+        <div className=\\"user-info\\">
+          Nicholas Runolfsdottir V
+        </div>
+        <div className=\\"user-info\\">
+          Maxime_Nienow
+        </div>
+        <div className=\\"user-info\\">
+          Sherwood@rosamond.me
+        </div>
+      </div>
+      <div className=\\"user\\">
+        <div className=\\"user-info\\">
+          Patricia Lebsack
+        </div>
+        <div className=\\"user-info\\">
+          Karianne
+        </div>
+        <div className=\\"user-info\\">
+          Julianne.OConner@kory.org
+        </div>
+      </div>
+    </div>
+  </div>
+</div>"
+`;
+
+exports[`Table Table renders data correclty with provided props for Users and sort ASC 1`] = `
+"<div className=\\"table-wrapper\\">
+  <div className=\\"table-buttons\\">
+    <Search text=\\"Search items by name\\" onChange={[Function: res]} />
+    <SelectDropdown onChange={[Function: res]} name=\\"Name\\" userName=\\"Username\\" email=\\"Email\\" />
+    <Btn onClick={[Function: onClick]} text=\\"Sort by DESC\\" />
+  </div>
+  <div className=\\"table-info\\">
+    <div className=\\"users-wrapper\\">
+      <h2>
+        Users
+      </h2>
+      <div className=\\"user-keys-wrapper\\" />
+    </div>
+  </div>
+</div>"
+`;
+
+exports[`Table Table renders data correclty with provided props for Users and sort DESC 1`] = `
+"<div className=\\"table-wrapper\\">
+  <div className=\\"table-buttons\\">
+    <Search text=\\"Search items by name\\" onChange={[Function: res]} />
+    <SelectDropdown onChange={[Function: res]} name=\\"Name\\" userName=\\"Username\\" email=\\"Email\\" />
+    <Btn onClick={[Function: onClick]} text=\\"Sort by ASC\\" />
+  </div>
+  <div className=\\"table-info\\">
+    <div className=\\"users-wrapper\\">
+      <h2>
+        Users
+      </h2>
+      <div className=\\"user-keys-wrapper\\" />
+    </div>
+  </div>
+</div>"
+`;

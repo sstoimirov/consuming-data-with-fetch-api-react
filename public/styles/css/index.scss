@@ -1,3 +1,15 @@
+@import "../variables/variables.scss";
+
+@function calculateRem($size){
+    $remSize: $size/14px;
+    @return #{$remSize}rem;
+}
+
+@mixin fontSize($size) {
+    font-size: $size;
+    font-size: calculateRem($size);
+}
+
 body {
     margin: 0 auto;
     padding: 0;
@@ -5,7 +17,7 @@ body {
     max-width: 1280px;
     min-width: 800px;
     font-family: Tahoma, Helvetica, sans-serif;
-    background-color: #fff;
+    background-color: $background-color__body;
 }
 
 .project-wrapper {
@@ -19,9 +31,9 @@ body {
     position: relative;
     padding: 0 10px;
     font-weight: bold;
-    font-size: 14px;
-    color: #fff;
-    background-color: #ccc
+    @include fontSize(14px);
+    color: $color__header-container;
+    background-color: $background-color__header-container
 }
 
 .header-menu-elements {
@@ -32,10 +44,10 @@ body {
         padding: 10px 30px;
         margin: 0 1px;
         cursor: pointer;
-        background-color: #666;
+        background-color: $background-color__header-menu-elements;
 
         &:hover {
-            background-color: #000;
+            background-color: $background-color__header-menu-elements--hover;
         }
     }
 }
@@ -51,7 +63,7 @@ body {
         right: 20px;
         top: 18px;
         transform: rotate(135deg);
-        background-color: #fff;
+        background-color: $background-color__header-elements-dropdown--before;
     }
 
     &:after {
@@ -62,7 +74,7 @@ body {
         right: 15px;
         top: 20px;
         transform: rotate(135deg);
-        background-color: #fff;
+        background-color: $background-color__header-elements-dropdown--after;
     }
 
     &:hover {
@@ -82,14 +94,13 @@ body {
     position: absolute;
     top: 100%;
     left: 0;
-    ;
     width: 148px;
-    font-size: 12px;
-    background-color: #000;
+    @include fontSize(12px);
+    background-color: $background-color__header-elements-dropdown--inner;
 
     &>div {
         padding: 6px 9px;
-        border-bottom: 1px solid #808080;
+        border-bottom: $border-bottom__header-elements-dropdown--inner;
     }
 }
 
@@ -127,25 +138,25 @@ body {
     display: flex;
     flex-direction: row;
     margin-top: 10px;
-    color: #fff;
+    color: $color__main-content;
 }
 
 .main-content-left-holder {
     padding: 10px;
-    background-color: #ccc;
+    background-color: $background-color__main-content-left-holder;
 }
 
 .main-content-left-holder--inner {
-    background-color: #515151;
+    background-color: $background-color__main-content-left-holder--inner;
 }
 
 .main-content-title {
     padding: 25px 0 15px;
     margin: 0 28px;
-    font-size: 48px;
+    @include fontSize(48px);
     font-weight: bold;
-    box-shadow: 0 1px 0 #7a7a7a;
-    border-bottom: 1px solid #000;
+    box-shadow:$box-shadow__main-content-title;
+    border-bottom: $border-bottom__main-content-title;
 }
 
 .main-content-elements {
@@ -168,7 +179,7 @@ body {
 //table
 .table-info {
     padding: 15px;
-    background-color: #282828;
+    background-color: $background-color__table-info;
 }
 
 .todos-wrapper,
@@ -181,15 +192,15 @@ body {
     padding-left: 5px;
 }
 
-.user-keys-wrapper{
+.user-keys-wrapper {
     display: flex;
     padding: 10px 0;
     text-transform: uppercase;
     font-weight: bold;
-    font-size: 14px;
+    @include fontSize(14px);
 }
 
-.user-key-value{
+.user-key-value {
     flex: 1;
 }
 
@@ -198,7 +209,8 @@ body {
     display: flex;
 }
 
-.user-info,.todo-info {
+.user-info,
+.todo-info {
     flex: 1;
     padding: 5px 0;
 }
@@ -207,24 +219,24 @@ body {
 .accordeon-wrapp {
     padding: 10px;
     flex: 0 0 30%;
-    background-color: #a3a3a3;
+    background-color: $background-color__accordeon-wrapp;
 }
 
 .accordeon-wrapp--inner {
     height: 100%;
     padding: 10px;
     box-sizing: border-box;
-    background-color: #515151;
+    background-color: $background-color__accordeon-wrapp--inner;
 }
 
 .accordeon-elements-holder {
     cursor: pointer;
-    background-color: #000;
+    background-color: $background-color__accordeon-elements-holder;
 }
 
 .accordeon-element-header {
     padding: 12px;
-    border-bottom: 1px solid #515151;
+    border-bottom: $border-bottom__accordeon-element-header;
 }
 
 .accordeon-text-holder {
@@ -248,8 +260,8 @@ body {
     display: flex;
     margin-top: 10px;
     padding: 16px 19px;
-    color: #515151;
-    background-color: #ccc;
+    color: $color__footer-container;
+    background-color: $background-color__footer-container;
 }
 
 .footer-links-elements {

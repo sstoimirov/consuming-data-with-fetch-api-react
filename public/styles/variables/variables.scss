@@ -1,0 +1,35 @@
+$primary_color: #fff;
+
+$background-color__body: $primary_color;
+
+$color__header-container: $primary_color;
+$background-color__header-container: #ccc;
+
+$background-color__header-menu-elements: #666;
+$background-color__header-menu-elements--hover: #000;
+
+$background-color__header-elements-dropdown--before: $primary_color;
+$background-color__header-elements-dropdown--after: $primary_color;
+
+$background-color__header-elements-dropdown--inner: #000;
+$border-bottom__header-elements-dropdown--inner: 1px solid #808080;
+
+$color__main-content: $primary_color;
+$background-color__main-content-left-holder: #ccc;
+$background-color__main-content-left-holder--inner: #515151;
+
+$box-shadow__main-content-title: 0 1px 0 #7a7a7a;
+$border-bottom__main-content-title: 1px solid #000;
+
+$background-color__table-info: #282828;
+//accordeon
+$color__accordeon-wrapp: $primary_color;
+$background-color__accordeon-wrapp: #a3a3a3;
+
+$background-color__accordeon-wrapp--inner: #515151;
+$background-color__accordeon-elements-holder: #000;
+
+$border-bottom__accordeon-element-header: 1px solid #515151;
+
+$color__footer-container: #515151;
+$background-color__footer-container: #ccc;
